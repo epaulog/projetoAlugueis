@@ -7,8 +7,6 @@
  * 
  * Classe Edificio
  * 
- * Inicial
- * 
  */
 
 package projetoAlugueis;

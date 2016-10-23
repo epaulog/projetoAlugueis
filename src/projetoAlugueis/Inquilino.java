@@ -5,9 +5,7 @@
  * 
  * Exercício Alugueis
  * 
- * Classe Edificio
- * 
- * Inicial
+ * Classe Inquilino
  * 
  */
 package projetoAlugueis;
