@@ -42,4 +42,23 @@ public class Edificio {
 		
 		return listaAlugados;
 	}
+	
+	public void alugaAptoEdificio(int _numero, Inquilino _inquilino) {
+		for (Apto ap: listaAptos) {
+	    	if (ap.getNumero() == _numero) {
+	    		ap.aluga(_inquilino);
+	    	}
+	    }
+	}
+
+	public void desalugaAptoEdificio(int _numero, Inquilino _inquilino) {
+		
+		for (Apto ap: listaAptos) {
+	    	if (ap.getNumero() == _numero) {
+	    		ap.desaluga();
+	    	}
+	    }
+	}
+	
+	
 }

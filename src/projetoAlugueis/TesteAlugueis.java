@@ -74,6 +74,13 @@ public class TesteAlugueis {
 	    }
 		
 		
-		
+	    
+	    edificioPortalDoSol.alugaAptoEdificio(102, inquilino);
+
+		System.out.println("----- Lista Alugados Edificio Portal do Sol -----");    
+	    for (Apto ap: edificioPortalDoSol.getApartamentosAlugados()) {
+	    	System.out.println(ap.toString());
+	    }
+	    
 	}
 }
