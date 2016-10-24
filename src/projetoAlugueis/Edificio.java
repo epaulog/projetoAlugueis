@@ -44,20 +44,29 @@ public class Edificio {
 	}
 	
 	public void alugaAptoEdificio(int _numero, Inquilino _inquilino) {
+		boolean existe = false;
 		for (Apto ap: listaAptos) {
 	    	if (ap.getNumero() == _numero) {
 	    		ap.aluga(_inquilino);
+	    		existe = true;
 	    	}
 	    }
+		if (!existe) {
+			System.out.println("Apto " + _numero + " não existe no Edificio " + nome);
+		}
 	}
 
 	public void desalugaAptoEdificio(int _numero, Inquilino _inquilino) {
-		
+		boolean existe = false;
 		for (Apto ap: listaAptos) {
 	    	if (ap.getNumero() == _numero) {
 	    		ap.desaluga();
+	    		existe = true;
 	    	}
 	    }
+		if (!existe) {
+			System.out.println("Apto " + _numero + " não existe no Edificio " + nome);
+		}
 	}
 	
 	
